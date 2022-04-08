@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__body::-webkit-scrollbar {
+  display: none;
+}
+.app__container{
+    background-image: url("./bg3.jpg");
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    
+
+    
+}
+
+.app__header{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-attachment: sticky;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.app__header > h1{
+    flex: 1;
+    text-align: center;
+}
+
+.app__header > button{
+    background: transparent;
+    outline: none;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    padding:  10px;
+    border-radius: 5px;
+
+}
+
+.app__header > button:hover{
+    background-color: black;
+    color: pink;
+
+
+}
+
+.app__body{
+    max-width: 600px;
+    width: 80%;
+    height: 400px;
+    margin: 2rem auto 3rem;
+    overflow: scroll;
+ 
+
+
+}
+
+.post{
+    width: 100%;
+    background-color: rgb(252, 238, 238);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.post__heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+}
+
+.post__heading > button,
+.modal__submit > button{
+    background-color : rgba(5, 5, 5, 0.753);
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: pink;
+
+}
+.post__heading > h3{
+    flex:1;
+}
+
+.modal__wrapper,
+.emodal__wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.336);
+    display: none;
+    
+}
+.modal__show{
+    display: block;
+}
+
+.modal__body{
+    max-width: 600px;
+    width: 80%;
+    background-color: white;
+    margin: 6rem auto 4rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 5px;
+}
+.modal__heading{
+    margin: 0 0 1rem;
+    text-align: center;
+}
+.modal__body label{
+    display: block;
+    margin: 1rem 0 0;
+    font-weight: bold;
+}
+
+.modal__body input{
+    width: 100%;
+    padding: 0.3rem 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+
+.modal__submit{
+    margin-top: 1rem;
+    text-align: center;
+}

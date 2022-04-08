@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    <title>Diary App</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="app__container">
+        <div class="app__header">
+            <h1>Share Your Memories</h1>
+            <button id="add"><h3>Add</h3></button>
+        </div>       
+         <div class="app__body">
+          
+        </div>
+
+
+    <!-- Add modal -->
+
+    <div class="modal__wrapper">
+    <div class="modal__body">
+        <div class="modal__heading">
+            <h1>Add Memory</h1>
+        </div>
+        <div class="modal__data">
+            <div class="modal__field">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Smigla" value="" required autocomplete="off">
+            </div>
+            <div class="modal__field">
+                <label for="email">Email</label>
+                <input type="email" placeholder="johnsmigla@gmail.com" id="email" value="" required autocomplete="off">
+            </div>
+            <div class="modal__field">
+                <label for="highlight">Highlight</label>
+                <input type="text" id="highlight" placeholder="first tour" value="" autocomplete="off">
+            </div>
+            <div class="modal__field">
+                <label for="thought">Body</label>
+                <input type="text" id="thought" placeholder="anything...." value="" autocomplete="off">
+            </div>
+            </div>
+            <div class="modal__submit">
+                <button id="s-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- update modal -->
+
+    
+    <div class="emodal__wrapper">
+        <div class="modal__body">
+            <div class="modal__heading">
+                <h1>Any Correction</h1>
+            </div>
+            <div class="modal__data">
+                <div class="modal__field">
+                    <label for="ename">Name</label>
+                    <input type="text" id="ename" placeholder="John Smigla" value="" required autocomplete="off">
+                </div>
+                <div class="modal__field">
+                    <label for="eemail">Email</label>
+                    <input type="email" placeholder="johnsmigla@gmail.com" id="eemail" value="" required autocomplete="off">
+                </div>
+                <div class="modal__field">
+                    <label for="ehighlight">Highlight</label>
+                    <input type="text" id="ehighlight" placeholder="first tour" value="" autocomplete="off">
+                </div>
+                <div class="modal__field">
+                    <label for="ethought">Body</label>
+                    <input type="text" id="ethought" placeholder="anything...." value="" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal__submit">
+                <button id="edit-s-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+    
+    <script>
+           const firebaseConfig = {
+                apiKey: "AIzaSyAPAxngrCEOdfCQAINnoBl-ew95cSp0b8o",
+                authDomain: "diary-42b4a.firebaseapp.com",
+                projectId: "diary-42b4a",
+                storageBucket: "diary-42b4a.appspot.com",
+                messagingSenderId: "339055648846",
+                appId: "1:339055648846:web:7b001ab5661ebf0c1d231f",
+                measurementId: "G-JH43XM0H5T",
+            };
+            // Initialize Firebase
+            const app = firebase.initializeApp(firebaseConfig);
+            var db = firebase.firestore();
+    </script>
+
+  
+     
+   <script src="./script.js"></script>
+
+</body>
+</html>
